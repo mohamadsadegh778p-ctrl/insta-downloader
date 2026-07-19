@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insta Downloader</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
-margin:0;
-background:white;
-font-family:sans-serif;
-text-align:center;
-padding-top:80px;
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+  font-family:tahoma,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:90%;
+  max-width:400px;
+  padding:35px 25px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  box-shadow:0 10px 40px rgba(0,0,0,.3);
+  text-align:center;
+  color:white;
+}
+
+.logo{
+  font-size:55px;
 }
 
 h1{
-font-size:30px;
+  font-size:30px;
+  margin:10px 0;
 }
 
 p{
-font-size:18px;
-color:#555;
+  font-size:18px;
+  line-height:2;
 }
 
 button{
-width:80%;
-padding:15px;
-margin:10px;
-border:0;
-border-radius:12px;
-font-size:18px;
-background:#0088cc;
-color:white;
+  width:90%;
+  padding:15px;
+  margin:10px;
+  border:none;
+  border-radius:18px;
+  font-size:18px;
+  cursor:pointer;
+  color:white;
+  background:rgba(255,255,255,.25);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.4);
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  background:rgba(255,255,255,.4);
 }
 
 .green{
-background:#22c55e;
+  background:rgba(34,197,94,.7);
 }
 </style>
 
@@ -42,14 +74,18 @@ background:#22c55e;
 
 <body>
 
-<h1>📥 Insta Downloader</h1>
+<div class="card">
+
+<div class="logo">📥</div>
+
+<h1>Insta Downloader</h1>
 
 <p>
 برای استفاده از ربات<br>
-اول عضو کانال شوید
+ابتدا عضو کانال شوید
 </p>
 
-<button>
+<button onclick="join()">
 📢 عضویت در کانال
 </button>
 
@@ -57,5 +93,14 @@ background:#22c55e;
 ✅ بررسی عضویت
 </button>
 
+</div>
+
+
+<script>
+function join(){
+ window.open("https://t.me/Gladiatorr20","_blank");
+}
+</script>
+
 </body>
-</html>
+  </html>
